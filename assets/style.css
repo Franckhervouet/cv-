@@ -1,0 +1,168 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+body,
+p,
+li {
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.languages {
+    text-align: r;
+}
+
+.languages span {
+    font-weight: 700;
+    text-align: left;
+}
+
+
+
+.skills {
+    font-weight: 700;
+}
+
+li span {
+    color: #17abb3;
+    font-weight: 700;
+}
+
+/* Global styles */
+body {
+    color: #333;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: #17abb3;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+header .profile-photo img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin: 10px 0 5px;
+}
+
+header .contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 0.9em;
+}
+
+/* Main layout */
+main {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.square::before {
+    content: "■";
+    color: #17abb3;
+    margin: 5px;
+}
+
+aside {
+    width: 30%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section.content {
+    width: 70%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Titles */
+h2 {
+    color: #17abb3;
+    border-bottom: 2px solid #17abb3;
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+/* Sub-section titles */
+h3 {
+    color: #17abb3;
+    margin: 10px 0 5px;
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Inner sections */
+section.content section {
+    margin-bottom: 20px;
+}
+
+section.content section section {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: 2px solid #ddd;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #17abb3;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    border-top: 2px solid #17abb3;
+}
+
+/* Extra Styles for Spacing and Layout */
+.skills ul,
+.languages ul,
+.qualities ul,
+.interests ul {
+    margin: 10px 0;
+}
+
+.skills ul li span,
+.languages ul li span,
+.qualities ul li span,
+.interests ul li span {
+    float: right;
+}
