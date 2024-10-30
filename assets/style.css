@@ -166,3 +166,23 @@ footer {
 .interests ul li span {
     float: right;
 }
+
+.logos {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+}
+
+.github {
+    height: 32px;
+}
+
+.instalogo {
+    color: #ffffff;
+    font-size: 32px;
+}
+
+.linkedin {
+    height: 32px;
+}
