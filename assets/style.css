@@ -1,3 +1,10 @@
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
 h1,
 h2,
 h3,
@@ -6,6 +13,15 @@ h5,
 h6 {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 75%;
+    padding: 20px;
+    margin: 20px;
+    font-size: larger;
 }
 
 body,
@@ -19,12 +35,15 @@ li {
     text-align: r;
 }
 
-.languages span {
+.languages span:first-child {
     font-weight: 700;
     text-align: left;
 }
 
-
+.languages p {
+    display: flex;
+    justify-content: space-between;
+}
 
 .skills {
     font-weight: 700;
@@ -35,7 +54,6 @@ li span {
     font-weight: 700;
 }
 
-/* Global styles */
 body {
     color: #333;
     background-color: #f5f5f5;
@@ -46,7 +64,7 @@ body {
     align-items: center;
 }
 
-/* Header */
+
 header {
     width: 100%;
     background-color: #17abb3;
@@ -55,12 +73,23 @@ header {
     padding: 20px;
 }
 
-header .profile-photo img {
+.profile-photo {
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
+    border: 5px solid #ffffff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.profile-photo img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
 
 header h1 {
     margin: 10px 0 5px;
@@ -73,12 +102,10 @@ header .contact-info {
     font-size: 0.9em;
 }
 
-/* Main layout */
 main {
     display: flex;
     max-width: 1200px;
     width: 100%;
-    padding: 20px;
     gap: 20px;
     box-sizing: border-box;
 }
@@ -91,21 +118,18 @@ main {
 
 aside {
     width: 30%;
-    background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 section.content {
     width: 70%;
     background-color: #ffffff;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Section Titles */
+
 h2 {
     color: #17abb3;
     border-bottom: 2px solid #17abb3;
@@ -113,13 +137,13 @@ h2 {
     margin-top: 0;
 }
 
-/* Sub-section titles */
+
 h3 {
-    color: #17abb3;
+    color: #333333;
     margin: 10px 0 5px;
 }
 
-/* Lists */
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -130,18 +154,23 @@ ul li {
     margin-bottom: 10px;
 }
 
-/* Inner sections */
+
 section.content section {
     margin-bottom: 20px;
 }
 
 section.content section section {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding-left: 10px;
     border-left: 2px solid #ddd;
 }
 
-/* Footer */
+section.content section section p {
+    margin: 0px;
+    font-style: italic;
+}
+
+
 footer {
     width: 100%;
     background-color: #17abb3;
@@ -152,7 +181,7 @@ footer {
     border-top: 2px solid #17abb3;
 }
 
-/* Extra Styles for Spacing and Layout */
+
 .skills ul,
 .languages ul,
 .qualities ul,
@@ -165,4 +194,37 @@ footer {
 .qualities ul li span,
 .interests ul li span {
     float: right;
+}
+
+.logos {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+}
+
+.github {
+    height: 32px;
+}
+
+.instalogo {
+    color: #ffffff;
+    font-size: 32px;
+}
+
+.linkedin {
+    height: 32px;
+}
+
+.formation,
+.stages,
+.XPpro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date {
+    color: #17abb3;
+    font-size: large;
 }
