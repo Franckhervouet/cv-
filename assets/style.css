@@ -228,3 +228,77 @@ footer {
     color: #17abb3;
     font-size: large;
 }
+
+.formation,
+.stages,
+.XPpro {
+    position: relative;
+    padding-left: 15px;
+    transition: background-color 0.3s, border-left 0.3s;
+}
+
+.formation:hover,
+.stages:hover,
+.XPpro:hover {
+    background-color: #f0f8ff;
+    border-left: 4px solid #17abb3;
+}
+
+.profile-photo {
+    cursor: zoom-in;
+    transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+}
+
+.logos a {
+    transition: opacity 0.3s;
+}
+
+.logos a:hover {
+    opacity: 0.7;
+}
+
+.formation,
+.stages,
+.XPpro {
+    position: relative;
+    padding-left: 15px;
+    transition: background-color 0.3s, border-left 0.3s;
+}
+
+.formation:hover,
+.stages:hover,
+.XPpro:hover {
+    background-color: #f0f8ff;
+    border-left: 4px solid #17abb3;
+}
+
+.profile-photo {
+    cursor: zoom-in;
+    transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+}
+
+
+.logos a {
+    transition: opacity 0.3s;
+}
+
+.logos a:hover {
+    opacity: 0.7;
+}
+
+header,
+footer,
+.content {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+
+}
